@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+header{
+    background-color: rgb(250, 250, 250);
+}
+nav {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul{
+    margin: 0;
+    list-style: none;
+}
+#social-media{
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex: 3;
+}
+#site-nav{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 5;
+}
+li{
+    margin: 5%;
+}
+.linkedin{
+    margin: 0;
+    height: 30px;
+    width: 30px;
+}
+.github{
+    margin: 0;
+    height: 30px;
+    width: 50px;
+}
+main{
+    background-color: blanchedalmond;
+}
+section{
+    height:100vh;
+}
