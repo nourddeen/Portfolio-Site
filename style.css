@@ -1,49 +1,80 @@
-body{
-    margin: 0;
+body {
+  font-family: "Lora", serif;
+  margin: 0;
 }
-header{
-    background-color: rgb(250, 250, 250);
+
+h1 {
+  font-family: "Staatliches", cursive;
+  font-size: 50px;
+  text-align: center;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(45deg, #004c99, #009994);
+  color: #f9f9f9;
+}
+
 nav {
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
-ul{
-    margin: 0;
-    list-style: none;
+
+.menu-control {
+  fill: #fff;
+  margin: 25px;
+  position: relative;
+}
+
+.menu {
+  background-color: rgba(7, 34, 53, 1);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  overflow-y: scroll;
+  padding: 15px 30px;
+  position: fixed;
+  transition: all 1s ease-in-out;
+  transform: translateX(100%);
+  z-index: 10;
+}
+.menu-open {
+  transform: translateX(0%);
+  opacity: 1;
+}
+.menu a,
+.menu a:focus,
+.menu a:visited {
+  color: white;
+  display: block;
+  font-size: 50px;
+  margin: 25px auto;
+  text-align: center;
+  text-decoration: none;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 3vh;
+}
+.linkedin , .github{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
 }
 #social-media{
-    padding: 0;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    flex: 3;
+    justify-content: center;
+    gap: 10%;
 }
-#site-nav{
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex: 5;
-}
-li{
-    margin: 5%;
-}
-.linkedin{
-    margin: 0;
-    height: 30px;
-    width: 30px;
-}
-.github{
-    margin: 0;
-    height: 30px;
-    width: 50px;
-}
-main{
-    background-color: blanchedalmond;
-}
-section{
-    height:100vh;
+.home-img, .resume-img, .projects-img{
+    width: 100%;
 }

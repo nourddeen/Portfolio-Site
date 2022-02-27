@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img id="menu-hamburger" class="menu-control" src="https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-animations-lesson-images/img/hamburger.svg" alt="Hamburger" role="navigation">
+    </nav>
+    <aside class="menu">
+        <a id="about-menu" onclick="scrollto('about');">About</a>
+        <a id="resume-menu" onclick="scrollto('resume');">Resume</a>
+        <a id="projects-menu" onclick="scrollto('projects');">Projects</a>
+        <a id="home-menu" onclick="scrollto('home');">Home</a>
+      </aside>
+    <main >
+        <section id="home">
+            <h2>Hello, I'm</h2>
+            <h1>Nourddeen Elyazji</h1>
+            <img class="home-img" src="img/demo-img.jpeg" alt="img">
+        </section>
+        <section id="about">
+            <h1>About me</h1>
+            <p>Ever since I moved to the United states, and I saw the power of software, I wanted to gain that power. </p>
+            <div id="social-media">
+                <img class="linkedin" src="img/LinkedIn_logo.png" alt="">
+                <img class="github" src="img/github-2.png" alt="">
+            </div>
+
+        </section>
+        <section id="resume">
+            <h1>Resume</h1>
+            <img class="resume-img" src="img/demo-img.jpeg" alt="img">
+
+        </section>
+        <section id="projects">
+            <h1>Projects</h1>
+            <img class="projects-img" src="img/demo-img.jpeg" alt="img">
+
+        </section>
+        
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
