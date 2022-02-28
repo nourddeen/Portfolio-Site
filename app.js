@@ -19,6 +19,8 @@ const menuSloseProjects = document.getElementById("projects-menu")
 $(menuSloseProjects).click(function(){
     $(".menu").toggleClass("menu-open")
 })
+
+
 function scrollto(div)
 {
  $('html,body').animate(
