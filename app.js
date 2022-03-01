@@ -1,10 +1,10 @@
 
 const menuOpen = document.getElementById('menu-hamburger');
-$(menuOpen).click(function(e) {
+$(menuOpen).click(function() {
     $(".menu").toggleClass("menu-open");
   });
 const menuClose = document.getElementById("home-menu")
-$(menuClose).click(function(e){
+$(menuClose).click(function(){
     $(".menu").toggleClass("menu-open")
 })
 const menuSloseAbout = document.getElementById("about-menu")
@@ -20,11 +20,8 @@ $(menuSloseProjects).click(function(){
     $(".menu").toggleClass("menu-open")
 })
 
-
-function scrollto(div)
-{
- $('html,body').animate(
- {
+function scrollto(div){
+ $('html,body').animate({
   scrollTop: $("#"+div).offset().top
  },'slow');
 }

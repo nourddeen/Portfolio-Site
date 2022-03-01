@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,54 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
-        <img id="menu-hamburger" class="menu-control" src="https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-animations-lesson-images/img/hamburger.svg" alt="Hamburger" role="navigation">
+        <img id="menu-hamburger" class="menu-control"
+            src="https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-animations-lesson-images/img/hamburger.svg"
+            alt="Hamburger">
     </nav>
     <aside class="menu">
         <a id="about-menu" onclick="scrollto('about');">About</a>
         <a id="resume-menu" onclick="scrollto('resume');">Resume</a>
         <a id="projects-menu" onclick="scrollto('projects');">Projects</a>
         <a id="home-menu" onclick="scrollto('home');">Home</a>
-      </aside>
-    <main >
+    </aside>
+    <main>
         <section id="home">
             <h2>Hello, I'm</h2>
             <h1>Nourddeen Elyazji</h1>
-            <img class="home-img" src="img/demo-img.jpeg" alt="img">
+            <h2>A Software Engineer</h2>
+            <!-- <img class="home-img" src="img/demo-img.jpeg" alt="img"> -->
         </section>
         <section id="about">
-            <h1>About me</h1>
-            <p>Ever since I moved to the United states, and I saw the power of software, I wanted to gain that power. </p>
-            <div id="social-media">
-                <a href="https://www.linkedin.com/in/nourddeen-elyazji-b95472170/"><img  class="linkedin" src="img/LinkedIn_logo.png" alt="linkedin"></a>
-                <a href="https://github.com/nourddeen"><img class="github" src="img/github-2.png" alt="github"></a>
+            
+            <div class="about-left">
+                <h1>About me</h1>
+                <p>
+                    Ever since I moved to the United states, and I saw the power of software, I wanted to gain that
+                    power.
+                    I believe that software can transform and improve the lives of people around the world. I was bored
+                    and raised in Libya.
+                    I studied some Electical Engineering in Tripoli Univercity. during my college years, I had the
+                    chance to move to America, and I took it.
+                    that's when I found my true pasion was in software and programming.
+                </p>
+                <p>
+                    Skills/interst : Javascript, HTML, CSS, jQuery, DOM menipulation,
+                </p>
+                <div id="social-media">
+                    <a href="https://www.linkedin.com/in/nourddeen-elyazji-b95472170/"><img class="linkedin"
+                            src="img/LinkedIn_logo.png" alt="linkedin"></a>
+                    <a href="https://github.com/nourddeen"><img class="github" src="img/github-2.png" alt="github"></a>
+                    <a href="https://www.hackerrank.com/nd_elyazji?hr_r=1"><img class="hacker-rank" src="img/hackerRank.png" alt="hacker-rank"></a>
+                </div>
+                
             </div>
+            <div class="about-right">
+                <img class="resume-img" src="img/IMG_0243.jpg" alt="img">
+            </div>
+
 
         </section>
         <section id="resume">
@@ -39,12 +65,19 @@
         </section>
         <section id="projects">
             <h1>Projects</h1>
-            <img class="projects-img" src="img/demo-img.jpeg" alt="img">
+            <div class="projects-img-div">
+                <img class="projects-img" src="img/demo-img.jpeg" alt="img">
+                <img class="projects-img" src="img/demo-img.jpeg" alt="img">
+                <img class="projects-img" src="img/demo-img.jpeg" alt="img">
+                <img class="projects-img" src="img/demo-img.jpeg" alt="img">
+            </div>
+            
 
         </section>
-        
+
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
