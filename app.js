@@ -20,8 +20,8 @@ $(menuSloseProjects).click(function(){
     $(".menu").toggleClass("menu-open")
 })
 
-function scrollto(div){
+function scrollto(section){
  $('html,body').animate({
-  scrollTop: $("#"+div).offset().top
+  scrollTop: $("#"+section).offset().top
  },'slow');
 }
