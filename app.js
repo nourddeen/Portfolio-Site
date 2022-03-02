@@ -3,25 +3,34 @@ const menuOpen = document.getElementById('menu-hamburger');
 $(menuOpen).click(function() {
     $(".menu").toggleClass("menu-open");
   });
-const menuClose = document.getElementById("home-menu")
-$(menuClose).click(function(){
+
+$("#home-menu").click(function(){
     $(".menu").toggleClass("menu-open")
 })
-const menuSloseAbout = document.getElementById("about-menu")
-$(menuSloseAbout).click(function(){
+
+$("#about-menu").click(function(){
     $(".menu").toggleClass("menu-open")
 })
-const menuSloseResume = document.getElementById("resume-menu")
-$(menuSloseResume).click(function(){
+
+$("#resume-menu").click(function(){
     $(".menu").toggleClass("menu-open")
 })
-const menuSloseProjects = document.getElementById("projects-menu")
-$(menuSloseProjects).click(function(){
-    $(".menu").toggleClass("menu-open")
-})
+// const menuSloseProjects = document.getElementById("projects-menu")
+// $(menuSloseProjects).click(function(){
+//     $(".menu").toggleClass("menu-open")
+// })
+// $(".menu").click(function() {
+//     $(".menu").toggleClass("menu-open")
+// })
 
 function scrollto(section){
  $('html,body').animate({
   scrollTop: $("#"+section).offset().top
  },'slow');
 }
+$(".check-me-out").on("click",function(){
+    $(".cover").addClass("active")
+})
+$(".cover").on("click", function(){
+    $(".cover").removeClass("active")
+})
